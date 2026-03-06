@@ -1,0 +1,174 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Desktop View (Default) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000; /* Kalo background jemon chobite ache */
+    padding: 15px 50px;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff9900; /* Hover korle color change hobe */
+}
+
+.menu-toggle {
+    display: none; /* Desktop-e mobile menu thakbe na */
+    cursor: pointer;
+}
+
+/* Tablet View */
+@media (max-width: 992px) {
+    .navbar {
+        padding: 15px 30px;
+    }
+}
+
+/* Mobile View (Responsive) */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Mobile-e menu lukiye thakbe */
+    }
+
+    .menu-toggle {
+        display: block; /* Mobile-e burger menu dekhabe */
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+
+    .navbar {
+        padding: 15px 20px;
+    }
+}
+
+/* hero section */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 10%;
+    min-height: 80vh;
+}
+
+/* Text Section */
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    color: white;
+}
+
+.btn-purple {
+    background-color: #512da8; /* Purple color from image */
+}
+
+/* Image Section */
+.hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* --- Responsive (Mobile & Tab) --- */
+
+/* Tablet View */
+@media (max-width: 1024px) {
+    .hero-text h1 { font-size: 2.5rem; }
+    .container { padding: 40px 5%; }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column-reverse; /* Image opore chole jabe, text niche */
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+}
+
+
+/* Education section */
+
+
