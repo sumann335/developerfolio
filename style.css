@@ -169,6 +169,126 @@ body {
 }
 
 
-/* Education section */
+/* Projects section */
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI;
+}
 
+body{
+background:#f2f2f2;
+}
+
+.opensource{
+width:90%;
+margin:auto;
+padding:60px 0;
+}
+
+.opensource h1{
+font-size:50px;
+margin-bottom:40px;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:6px;
+box-shadow:0 6px 20px rgba(0,0,0,0.06);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+.card h3{
+font-size:20px;
+margin-bottom:10px;
+}
+
+.card h3 i{
+margin-right:8px;
+}
+
+.card p{
+color:#666;
+font-size:15px;
+line-height:1.6;
+margin-bottom:25px;
+}
+
+.card-footer{
+display:flex;
+justify-content:space-between;
+align-items:center;
+font-size:14px;
+color:#777;
+}
+
+.left span{
+margin-right:15px;
+}
+
+.dot{
+height:10px;
+width:10px;
+background:#f1c40f;
+border-radius:50%;
+display:inline-block;
+margin-right:6px;
+}
+
+.size{
+font-size:13px;
+color:#888;
+}
+
+.more{
+display:block;
+margin:50px auto 0;
+background:#5b2ca0;
+color:white;
+border:none;
+padding:14px 35px;
+border-radius:6px;
+font-weight:600;
+cursor:pointer;
+}
+
+.more:hover{
+background:#4a2290;
+}
+
+/* Tablet */
+
+@media (max-width:1000px){
+
+.projects{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+/* Mobile */
+
+@media (max-width:600px){
+
+.projects{
+grid-template-columns:1fr;
+}
+
+.opensource h1{
+font-size:32px;
+}
+
+}
